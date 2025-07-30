@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="./emailjs.js"></script>
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <nav id="header">
+        <div class="nav-logo">
+          <p class="nav-name">Ahamed</p>
+          <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="#home" class="nav-link active-link">Home</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#about" class="nav-link">About</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#projects" class="nav-link">Projects</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#contact" class="nav-link">Contact</a>
+              <div class="circle"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-button">
+          <a href="./Zuber's CV.pdf" target="_blank">
+            <button class="btn">View CV<i class="uil uil-file-alt"></i></button>
+          </a>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+      <!-- main -->
+      <main class="wrapper">
+        <!-- featured box -->
+        <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+              <span>Zuber Ahamed S</span>
+            </div>
+            <div class="featured-name">
+              <p>I'm <span class="typedText">Developer</span></p>
+            </div>
+            <div class="featured-text-info">
+              <p>
+                Experienced frontend developer with a passion for creating
+                visually stunnig and user-friendly websites.
+              </p>
+            </div>
+            <div class="featured-text-btn">
+              <a href="https://wa.link/r5xgw2" class="btn blue-btn">Hire Me</a>
+              <a href="./Zuber's CV.pdf" target="_blank"
+                ><button class="btn">
+                  View CV <i class="uil uil-file-alt"></i></button
+              ></a>
+            </div>
+            <div class="social_icons">
+              <div class="icon">
+                <a
+                  href=" https://www.instagram.com/mr_fearless_006?igsh=MWxsbHFhMndyZnFoMg==&utm_source=ig_contact_invite"
+                  ><i class="uil uil-instagram"></i
+                ></a>
+              </div>
+              <div class="icon">
+                <a href="https://www.linkedin.com/in/zuber-ahamed-s-980347306"
+                  ><i class="uil uil-linkedin-alt"></i
+                ></a>
+              </div>
+              <div class="icon">
+                <a href="https://github.com/Ahamedzuber02"
+                  ><i class="uil uil-github-alt"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+              <img src="./20250722_112919.png" alt="avatar" />
+            </div>
+          </div>
+        </section>
+        <!-- <div class="scroll-icon-box">
+          <a href="#about" class="scroll-btn">
+            <i class="uil uil-mouse-alt"></i>
+            <p>Scroll Down</p>
+          </a>
+        </div> -->
+
+        <!-- about -->
+        <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="about-info">
+                <h3>My introduction</h3>
+                <p>
+                  Hi, I'm Zuber Ahamed — a web developer with a strong
+                  foundation in front-end technologies like
+                  <b>HTML, CSS, JavaScript, Bootstrap,</b> and <b>ReactJS</b>.
+                  I've completed a full-stack web development course and am
+                  currently learning backend development with
+                  <b>Python, Django,</b> and <b>MySQL</b>. I’ve built several
+                  personal projects and enjoy turning ideas into real,
+                  <b>user-friendly websites</b>. I’m passionate about coding,
+                  eager to grow, and <u>open to new opportunities</u> where I
+                  can <u>collaborate with teams</u>, learn from real-world
+                  experience, and contribute meaningfully.
+                </p>
+                <div class="about-btn">
+                  <a href="./Zuber's CV.pdf" target="_blank">
+                    <button class="btn">
+                      View CV <i class="uil uil-import"></i></button
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h3>Frontend</h3>
+                </div>
+                <div class="skills-list">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Tailwind CSS</span>
+                  <span>Bootsrap</span>
+                  <span>JavaScript</span>
+                  <span>React.JS</span>
+                  <span>Github</span>
+                </div>
+              </div>
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h3>Backend</h3>
+                </div>
+                <div class="skills-list">
+                  <span>Python</span>
+                  <span>Django</span>
+                  <span>MySQL</span>
+                </div>
+              </div>
+              <!-- <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Concepts & Methodologies</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>Web Design</span>
+                            <span>Responsive Design</span>
+                            <span>API Development</span>
+                            <span>Authentication & Authorization</span>
+                            <span>Problem Solving</span>
+                            <span>Debugging & Troubleshooting</span>
+                            <span>Object-Oriented Programming (OOP)</span>
+                        </div>
+                    </div> -->
+            </div>
+          </div>
+        </section>
+        <!-- project box -->
+        <section class="section" id="projects">
+          <div class="top-header">
+            <h1>My Projects</h1>
+            <p class="project-p">
+              <svg
+                viewBox="0 0 24 24"
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000000"
+                width="30"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <defs></defs>
+                  <path
+                    class="cls-1"
+                    d="M17.07,20.61H9.79a2,2,0,0,1-2-2,2,2,0,0,1,2-2h1.87L5,9.86a2,2,0,0,1-.19-2.65,1.88,1.88,0,0,1,1.47-.68,1.84,1.84,0,0,1,1.35.55l4.06,4.06,4.08-3.06a1.91,1.91,0,0,1,2.5.18h0A17.18,17.18,0,0,1,22.42,15l.06.19"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M10.63,10.12A4.73,4.73,0,0,0,11,8.17,4.78,4.78,0,1,0,6.26,13a4.67,4.67,0,0,0,1.55-.26"
+                  ></path>
+                </g>
+              </svg>
+              Click on cards to see live site.
+            </p>
+          </div>
+          <div class="project-container">
+            <a
+              target="_blank"
+              href="https://dulquer-dastagir-zubkart.netlify.app/"
+              class="project-box"
+              id="ecommerce"
+            >
+              <i class="uil uil-shopping-bag"></i>
+              <h3>Ecommerce website</h3>
+              <!-- <label>15+ Finished Projects</label> -->
+            </a>
+            <a target="_blank" href="#" class="project-box resume">
+              <i class="uil uil-briefcase-alt"></i>
+              <h3>Portfolio(this website)</h3>
+              <!-- <label>25+ Happy Clients</label> -->
+            </a>
+            <a
+              target="_blank"
+              href="https://jolly-duckanoo-a3cadb.netlify.app/"
+              class="project-box"
+            >
+              <i class="uil uil-megaphone"></i>
+              <h3 style="text-align: center">
+                Text To Speech
+                <br />Converter
+              </h3>
+              <!-- <label>7+ years in the field</label> -->
+            </a>
+            <a
+              target="_blank"
+              href="https://mellow-custard-36df95.netlify.app/"
+              class="project-box"
+            >
+              <i class="uil uil-calculator-alt"></i>
+              <h3>Calculator</h3>
+              <!-- <label>7+ years in the field</label> -->
+            </a>
+            <a
+              target="_blank"
+              href="https://celadon-croissant-d2930d.netlify.app/"
+              class="project-box"
+            >
+              <i class="uil uil-calendar-alt"></i>
+              <h3>Calendar</h3>
+              <!-- <label>7+ years in the field</label> -->
+            </a>
+            <a
+              target="_blank"
+              href="https://lucent-gaufre-d56038.netlify.app/"
+              class="project-box"
+            >
+              <i class="uil uil-equal-circle"></i>
+              <h3>Age Calculator</h3>
+              <!-- <label>7+ years in the field</label> -->
+            </a>
+          </div>
+        </section>
+        <!-- contact box -->
+        <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="contact-info">
+                <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                <p>
+                  <i class="uil uil-envelope"></i>Email: ahamedzuber02@gmail.com
+                </p>
+                <p><i class="uil uil-phone"></i>Phone:+91 6383163462</p>
+              </div>
+            </div>
+            <form id="contact-form" class="col">
+              <div class="form-control">
+                <div class="form-inputs">
+                  <input
+                    name="name"
+                    type="text"
+                    class="input-field"
+                    placeholder="Name"
+                    required
+                  />
+                  <input
+                    name="email"
+                    type="text"
+                    class="input-field"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="text-area">
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-button">
+                  <button class="btn">
+                    Send<i class="uil uil-message"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="top-footer">
+        <p>Zuber Ahamed</p>
+      </div>
+      <div class="middle-footer">
+        <ul class="footer-menu">
+          <li class="footer_menu_list">
+            <a href="#home">Home</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#about">About</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social_icons">
+        <div class="icon">
+          <a
+            href=" https://www.instagram.com/mr_fearless_006?igsh=MWxsbHFhMndyZnFoMg==&utm_source=ig_contact_invite"
+            ><i class="uil uil-instagram"></i
+          ></a>
+        </div>
+        <div class="icon">
+          <a href="https://www.linkedin.com/in/zuber-ahamed-s-980347306"
+            ><i class="uil uil-linkedin-alt"></i
+          ></a>
+        </div>
+        <div class="icon">
+          <a href="https://github.com/Ahamedzuber02"
+            ><i class="uil uil-github-alt"></i
+          ></a>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <p>
+          Copyright &copy;
+          <a href="#home" style="text-decoration: none">Zuber Ahamed </a> - All
+          right reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- typing js link -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- scroll reveal js link -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
